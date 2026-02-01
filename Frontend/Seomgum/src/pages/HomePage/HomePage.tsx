@@ -5,20 +5,25 @@ import Footer from '../../components/Footer/Footer'
 
 import benefit from '../../assets/benefit.jpeg'
 
-import anak from '../../assets/testimoni/anak.jpeg'
 import armiyati from '../../assets/testimoni/armiyati.jpeg'
 import cacar from '../../assets/testimoni/cacar.jpeg'
 import gatal from '../../assets/testimoni/gatal.jpeg'
 import ziva from '../../assets/testimoni/ziva.jpeg'
+import wasir from '../../assets/testimoni/wasir.jpeg'
+import kuning from '../../assets/testimoni/kuning.jpeg'
 
 import salmon from '../../assets/manfaat/salmon.jpeg'
-import serum from '../../assets/manfaat/serum.jpeg'
-import wasir from '../../assets/manfaat/wasir.jpeg'
+import serumImage from '../../assets/manfaat/serum.jpeg'
+import anak from '../../assets/manfaat/anak.jpeg'
+import viral from '../../assets/manfaat/viral.jpeg'
+import ceutical from '../../assets/manfaat/ceutical.jpeg'
+import aktif from '../../assets/manfaat/aktif.jpeg'
 
 import produk from '../../assets/produk.jpeg'
 
-const testimoni = [anak, armiyati, cacar, gatal, ziva];
-const manfaat = [salmon, serum, wasir];
+const testimoni = [kuning, wasir, armiyati, cacar, gatal, ziva];
+const manfaatSeomGum = [aktif, anak, viral];
+const manfaatSerum = [salmon, serumImage, ceutical];
 
 const contacts = {
   ully: { phone: '6281283822163', name: 'Ully' },
@@ -86,28 +91,136 @@ const HomePage: React.FC<HomePageProps> = ({ waNumber, agentName }) => {
         <section className="w-full bg-gradient-to-b from-white to-purple-50 py-16">
           <div className="max-w-6xl mx-auto px-6 sm:px-8">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-4">
-              Manfaat Produk Seom Gum
+              Produk Seom Gum
             </h2>
             <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
               Nikmati berbagai manfaat kesehatan dari produk kami
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-start">
-              {manfaat.map((src, idx) => (
-                <div key={idx} className="w-full flex items-center justify-center">
-                  <img
-                    src={src}
-                    alt={`manfaat ${idx + 1}`}
-                    className="w-full h-auto object-contain rounded-lg shadow-lg"
-                  />
+
+            {/* Soap Products */}
+            <div className="mb-16">
+              <h3 className="text-2xl md:text-3xl font-bold text-purple-700 text-center mb-8">
+                Sabun
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                {/* Glowing Soap */}
+                <div className="bg-white rounded-xl shadow-lg p-6">
+                  <h4 className="text-xl font-bold text-yellow-600 mb-4">Seom Gum Glowing Soap</h4>
+
+                  <div className="mb-4">
+                    <p className="font-semibold text-slate-900 mb-2">MANFAAT:</p>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1 text-sm">
+                      <li>Menghaluskan kulit</li>
+                      <li>Mencerahkan kulit</li>
+                      <li>Melembabkan kulit</li>
+                      <li>Mengurangi bau badan</li>
+                      <li>Mengatasi flek hitam</li>
+                      <li>Membantu mengurangi jerawat</li>
+                      <li>Mengurangi keringat berlebih</li>
+                      <li>Membuat Mr.P lebih besar secara proporsional</li>
+                      <li>Menebalkan dan mengencangkan payudara</li>
+                    </ul>
+                  </div>
                 </div>
-              ))}
+
+                {/* Feminine Soap */}
+                <div className="bg-white rounded-xl shadow-lg p-6">
+                  <h4 className="text-xl font-bold text-purple-600 mb-4">Seom Gum Feminine Soap</h4>
+
+                  <div className="mb-4">
+                    <p className="font-semibold text-slate-900 mb-2">MANFAAT:</p>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1 text-sm">
+                      <li>Merapatkan miss V</li>
+                      <li>Mengatasi keputihan</li>
+                      <li>Menyegarkan kulit</li>
+                      <li>Membuat keset & tidak becek</li>
+                      <li>Mencerahkan area lipatan</li>
+                      <li>Membuat miss V wangi</li>
+                      <li>Menormalkan siklus haid</li>
+                      <li>Membantu bakteri baik jamur</li>
+                      <li>Mengurangi nyeri haid</li>
+                      <li>Menjaga kulit tetap sehat</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start">
+                {manfaatSeomGum.map((src, idx) => (
+                  <div key={idx} className="w-full flex items-center justify-center">
+                    <img
+                      src={src}
+                      alt={`manfaat ${idx + 1}`}
+                      className="w-full h-auto object-contain rounded-lg shadow-lg"
+                    />
+                  </div>
+                ))}
+              </div>
+
+            {/* Serum Products */}
+            <div className='py-10'>
+              <h3 className="text-2xl md:text-3xl font-bold text-purple-700 text-center mb-8">
+                Serum
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
+                {/* Ceutical Serum - Glowing & Anti Wrinkle */}
+                <div className="bg-white rounded-xl shadow-lg p-6">
+                  <h4 className="text-xl font-bold text-amber-700 mb-4">Seomgum Ceutical Serum - Glowing & Anti Wrinkle</h4>
+                  
+                  <div className="mb-4">
+                    <p className="font-semibold text-slate-900 mb-2">MANFAAT:</p>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1 text-sm">
+                      <li>Melembapkan kulit</li>
+                      <li>Mencerahkan & meratakan warna kulit</li>
+                      <li>Kulit lebih halus & kenyal</li>
+                      <li>Mengurangi kerutan</li>
+                    </ul>
+                  </div>
+
+                </div>
+
+                {/* Ceutical Serum - Anti Black Spot */}
+                <div className="bg-white rounded-xl shadow-lg p-6">
+                  <h4 className="text-xl font-bold text-blue-700 mb-4">Seomgum Ceutical - Anti Black Spot & Anti Acne</h4>
+                  
+                  <div className="mb-4">
+                    <p className="font-semibold text-slate-900 mb-2">MANFAAT:</p>
+                    <ul className="list-disc list-inside text-slate-700 space-y-1 text-sm">
+                      <li>Kulit Bebas Jerawat & Sehat</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Product Images */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start">
+                {manfaatSerum.map((src, idx) => (
+                  <div key={idx} className="w-full flex items-center justify-center">
+                    <img
+                      src={src}
+                      alt={`manfaat ${idx + 1}`}
+                      className="w-full h-auto object-contain rounded-lg shadow-lg"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
         <section className="w-full border-t border-slate-100">
           <div className="max-w-6xl mx-auto px-6 sm:px-8 py-12">
-            <h2 className="text-2xl font-semibold text-slate-900 mb-6">Testimoni</h2>
+            <div className="max-w-6xl mx-auto px-6 sm:px-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-4">
+                Testimoni
+              </h2>
+              <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+                Testimoni dari beberapa pengguna yang sudah merasakan manfaatnya
+              </p>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start">
               {testimoni.map((src, idx) => (
                 <div key={idx} className="w-full flex items-center justify-center">
