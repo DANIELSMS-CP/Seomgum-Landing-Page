@@ -119,7 +119,8 @@ const HomePage: React.FC<HomePageProps> = ({ waNumber, agentName }) => {
                     <h3 className="text-2xl md:text-3xl font-bold text-amber-700 mb-6">Serum Seom Gum</h3>
                     <p className="text-lg text-slate-600 leading-relaxed">
                       {/* TODO: Add description for Seom Gum Serum */}
-                      Serum Seom Gum adalah produk perawatan kulit premium yang diformulasikan khusus untuk memberikan hasil maksimal.
+                      Serum Seom Gum adalah produk perawatan kulit premium yang diformulasikan khusus untuk memberikan hasil maksimal. Mengandung Coenzyme Q10,
+                      serum Seom Gum dapat melindungi kulit dari kerusakan
                     </p>
                   </div>
                   <div className="flex justify-center">
