@@ -5,20 +5,33 @@ import Footer from '../../components/Footer/Footer'
 
 import benefit from '../../assets/benefit.jpeg'
 
-import armiyati from '../../assets/testimoni/armiyati.jpeg'
-import cacar from '../../assets/testimoni/cacar.jpeg'
-import gatal from '../../assets/testimoni/gatal.jpeg'
-import ziva from '../../assets/testimoni/ziva.jpeg'
-import wasir from '../../assets/testimoni/wasir.jpeg'
+import foto_sabun from '../../assets/foto_produk/foto_sabun.jpeg'
+import foto_serum from '../../assets/foto_produk/foto_serum.png'
 
-import glowingSoap from '../../assets/manfaat/salmon.jpeg'
+import armiyati from '../../assets/testimoni_sabun/armiyati.jpeg'
+import cacar from '../../assets/testimoni_sabun/cacar.jpeg'
+import gatal from '../../assets/testimoni_sabun/gatal.jpeg'
+import ziva from '../../assets/testimoni_sabun/ziva.jpeg'
+import wasir from '../../assets/testimoni_sabun/wasir.jpeg'
+import kuning from '../../assets/testimoni_sabun/kuning.jpeg'
+
+import anti_aging from '../../assets/testimoni_serum/anti_aging.jpeg'
+import before from '../../assets/testimoni_serum/before.jpeg'
+import menstruasi from '../../assets/testimoni_serum/menstruasi.jpeg'
+
+import salmon from '../../assets/manfaat/salmon.jpeg'
 import serumImage from '../../assets/manfaat/serum.jpeg'
 import anak from '../../assets/manfaat/anak.jpeg'
+import viral from '../../assets/manfaat/viral.jpeg'
+import ceutical from '../../assets/manfaat/ceutical.jpeg'
+import aktif from '../../assets/manfaat/aktif.jpeg'
 
 import produk from '../../assets/produk.jpeg'
 
-const testimoni = [wasir, armiyati, cacar, gatal, ziva];
-const manfaat = [glowingSoap, serumImage, anak];
+const testimoni_sabun = [kuning, wasir, armiyati, cacar, gatal, ziva];
+const testimoni_serum = [anti_aging, before, menstruasi];
+const manfaatSeomGum = [aktif, anak, viral];
+const manfaatSerum = [salmon, serumImage, ceutical];
 
 const contacts = {
   ully: { phone: '6281283822163', name: 'Ully' },
@@ -75,13 +88,53 @@ const HomePage: React.FC<HomePageProps> = ({ waNumber, agentName }) => {
 
         <section className="w-full bg-gradient-to-b from-white to-purple-50">
           <div className="max-w-6xl mx-auto px-6 sm:px-8 py-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-12">
               Apa itu Seom Gum? 
             </h2>
-            <p className="text-2xl text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-              Seom Gum adalah sabun yang dirancang untuk memiliki banyak manfaat. Sabun ini memiliki kandungan seperti
-              aloe vera, bunga sepatu, dan lidah buaya untuk memberikan manfaat yang banyak untuk masalah kulit.
-            </p>
+            
+            <div className="space-y-12">
+              {/* Sabun Description */}
+              <div className="bg-white rounded-xl shadow-lg p-10 md:p-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                  <div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-purple-700 mb-6">Sabun Seom Gum</h3>
+                    <p className="text-lg text-slate-600 leading-relaxed">
+                      {/* TODO: Add description for Seom Gum Sabun */}
+                      Seom Gum adalah sabun yang dirancang untuk memiliki banyak manfaat. Sabun ini memiliki kandungan seperti
+                      aloe vera, bunga sepatu, dan lidah buaya untuk memberikan manfaat yang banyak untuk masalah kulit.
+                    </p>
+                  </div>
+                  <div className="flex justify-center">
+                    <img
+                      src={foto_sabun}
+                      alt="Sabun Seom Gum"
+                      className="w-full h-80 object-contain rounded-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Serum Description */}
+              <div className="bg-white rounded-xl shadow-lg p-10 md:p-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                  <div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-amber-700 mb-6">Serum Seom Gum</h3>
+                    <p className="text-lg text-slate-600 leading-relaxed">
+                      {/* TODO: Add description for Seom Gum Serum */}
+                      Serum Seom Gum adalah produk perawatan kulit premium yang diformulasikan khusus untuk memberikan hasil maksimal. Mengandung Coenzyme Q10,
+                      serum Seom Gum dapat melindungi kulit dari kerusakan
+                    </p>
+                  </div>
+                  <div className="flex justify-center">
+                    <img
+                      src={foto_serum}
+                      alt="Serum Seom Gum"
+                      className="w-full h-80 object-contain rounded-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -113,7 +166,6 @@ const HomePage: React.FC<HomePageProps> = ({ waNumber, agentName }) => {
                       <li>Melembabkan kulit</li>
                       <li>Mengurangi bau badan</li>
                       <li>Mengatasi flek hitam</li>
-                      <li>Sebagai pH balance</li>
                       <li>Membantu mengurangi jerawat</li>
                       <li>Mengurangi keringat berlebih</li>
                       <li>Membuat Mr.P lebih besar secara proporsional</li>
@@ -127,13 +179,11 @@ const HomePage: React.FC<HomePageProps> = ({ waNumber, agentName }) => {
                   <h4 className="text-xl font-bold text-purple-600 mb-4">Seom Gum Feminine Soap</h4>
 
                   <div className="mb-4">
-                    <p className="font-semibold text- Mengandung Coenzyme Q10,
-                      serum Seom Gum dapat melindungi kulit dari kerusakanslate-900 mb-2">MANFAAT:</p>
+                    <p className="font-semibold text-slate-900 mb-2">MANFAAT:</p>
                     <ul className="list-disc list-inside text-slate-700 space-y-1 text-sm">
                       <li>Merapatkan miss V</li>
                       <li>Mengatasi keputihan</li>
                       <li>Menyegarkan kulit</li>
-                      <li>pH sesuai area sensitif</li>
                       <li>Membuat keset & tidak becek</li>
                       <li>Mencerahkan area lipatan</li>
                       <li>Membuat miss V wangi</li>
@@ -147,8 +197,20 @@ const HomePage: React.FC<HomePageProps> = ({ waNumber, agentName }) => {
               </div>
             </div>
 
+             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start">
+                {manfaatSeomGum.map((src, idx) => (
+                  <div key={idx} className="w-full flex items-center justify-center">
+                    <img
+                      src={src}
+                      alt={`manfaat ${idx + 1}`}
+                      className="w-full h-auto object-contain rounded-lg shadow-lg"
+                    />
+                  </div>
+                ))}
+              </div>
+
             {/* Serum Products */}
-            <div>
+            <div className='py-10'>
               <h3 className="text-2xl md:text-3xl font-bold text-purple-700 text-center mb-8">
                 Serum
               </h3>
@@ -185,7 +247,7 @@ const HomePage: React.FC<HomePageProps> = ({ waNumber, agentName }) => {
 
               {/* Product Images */}
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start">
-                {manfaat.map((src, idx) => (
+                {manfaatSerum.map((src, idx) => (
                   <div key={idx} className="w-full flex items-center justify-center">
                     <img
                       src={src}
@@ -201,17 +263,49 @@ const HomePage: React.FC<HomePageProps> = ({ waNumber, agentName }) => {
 
         <section className="w-full border-t border-slate-100">
           <div className="max-w-6xl mx-auto px-6 sm:px-8 py-12">
-            <h2 className="text-2xl font-semibold text-slate-900 mb-6">Testimoni</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start">
-              {testimoni.map((src, idx) => (
-                <div key={idx} className="w-full flex items-center justify-center">
-                  <img
-                    src={src}
-                    alt={`testimonial ${idx + 1}`}
-                    className="w-full h-64 sm:h-72 md:h-80 lg:h-96 object-contain rounded-lg border bg-slate-50 p-4 shadow transform transition hover:scale-105"
-                  />
-                </div>
-              ))}
+            <div className="max-w-6xl mx-auto px-6 sm:px-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-4">
+                Testimoni
+              </h2>
+              <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+                Testimoni dari beberapa pengguna yang sudah merasakan manfaatnya
+              </p>
+            </div>
+
+            {/* Testimoni Sabun */}
+            <div className="mb-16">
+              <h3 className="text-2xl md:text-3xl font-bold text-purple-700 text-center mb-8">
+                Testimoni Sabun Seom Gum
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start">
+                {testimoni_sabun.map((src, idx) => (
+                  <div key={idx} className="w-full flex items-center justify-center">
+                    <img
+                      src={src}
+                      alt={`testimonial sabun ${idx + 1}`}
+                      className="w-full h-64 sm:h-72 md:h-80 lg:h-96 object-contain rounded-lg border bg-slate-50 p-4 shadow transform transition hover:scale-105"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Testimoni Serum */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-amber-700 text-center mb-8">
+                Testimoni Serum Seom Gum
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start">
+                {testimoni_serum.map((src, idx) => (
+                  <div key={idx} className="w-full flex items-center justify-center">
+                    <img
+                      src={src}
+                      alt={`testimonial serum ${idx + 1}`}
+                      className="w-full h-64 sm:h-72 md:h-80 lg:h-96 object-contain rounded-lg border bg-slate-50 p-4 shadow transform transition hover:scale-105"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
