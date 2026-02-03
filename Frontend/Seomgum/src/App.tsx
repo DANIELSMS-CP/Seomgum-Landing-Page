@@ -10,8 +10,8 @@ function App() {
         <Route path="/armiyati" element={<HomePage waNumber="6281369459077" agentName="Armiyati" />} />
         <Route path="/dewi" element={<HomePage waNumber="6285857527865" agentName="Dewi" />} />
         <Route path="/tina" element={<HomePage waNumber="6281376037827" agentName="Tina" />} />
-        <Route path="/ummi" element={<HomePage waNumber="081364662894" agentName="Ummi Umara" />} />
-        <Route path="/nunung" element={<HomePage waNumber="08984656407" agentName="Nunung Rahmawati" />} />
+        <Route path="/ummi" element={<HomePage waNumber="6281364662894" agentName="Ummi Umara" />} />
+        <Route path="/nunung" element={<HomePage waNumber="628984656407" agentName="Nunung Rahmawati" />} />
       </Routes>
     </BrowserRouter>
   )
