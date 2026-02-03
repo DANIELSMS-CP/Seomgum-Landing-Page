@@ -38,8 +38,8 @@ const contacts = {
   armiyati: { phone: '6281369459077', name: 'Armiyati' },
   dewi: { phone: '6285857527865', name: 'Dewi' },
   tina: { phone: '6281376037827', name: 'Tina' },
-  ummi: { phone: '081364662894', name: 'Ummi Umara' },
-  nunung: { phone: '08984656407', name: 'Nunung Rahmawati' }
+  ummi: { phone: '621364662894', name: 'Ummi Umara' },
+  nunung: { phone: '62984656407', name: 'Nunung Rahmawati' }
 };
 
 // Change this to 'ully' or 'armiyati' to switch between contacts
