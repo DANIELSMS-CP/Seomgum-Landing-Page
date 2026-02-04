@@ -12,6 +12,9 @@ function App() {
         <Route path="/tina" element={<HomePage waNumber="6281376037827" agentName="Tina" />} />
         <Route path="/ummi" element={<HomePage waNumber="6281364662894" agentName="Ummi Umara" />} />
         <Route path="/nunung" element={<HomePage waNumber="628984656407" agentName="Nunung Rahmawati" />} />
+        <Route path="/fitriani" element={<HomePage waNumber="6285651197903" agentName="Fitriani" />} />
+        <Route path="/kholifah" element={<HomePage waNumber="62085600613259" agentName="Kholifah" />} />
+        <Route path="/linaeni" element={<HomePage waNumber="62083822824767" agentName="Linaeni" />} />
       </Routes>
     </BrowserRouter>
   )
