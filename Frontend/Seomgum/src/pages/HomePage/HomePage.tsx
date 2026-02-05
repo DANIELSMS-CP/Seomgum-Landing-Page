@@ -39,11 +39,12 @@ const contacts = {
   dewi: { phone: '6285857527865', name: 'Dewi' },
   tina: { phone: '6281376037827', name: 'Tina' },
   ummi: { phone: '6281364662894', name: 'Ummi Umara' },
-  nunung: { phone: '628984656407', name: 'Nunung Rahmawati' }
+  nunung: { phone: '628984656407', name: 'Nunung Rahmawati' },
+  asmunah: { phone: '6287897176825', name: 'Asmunah' }
 };
 
 // Change this to 'ully' or 'armiyati' to switch between contacts
-const CONTACT_PERSON: 'ully' | 'armiyati' | 'dewi' | 'tina' | 'ummi' | 'nunung' = 'ully';
+const CONTACT_PERSON: 'ully' | 'armiyati' | 'dewi' | 'tina' | 'ummi' | 'nunung' | 'asmunah' = 'ully';
 
 interface HomePageProps {
   waNumber?: string;
