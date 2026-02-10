@@ -8,7 +8,6 @@ import benefit from '../../assets/benefit.jpeg'
 import foto_sabun from '../../assets/foto_produk/foto_sabun.jpeg'
 import foto_serum from '../../assets/foto_produk/foto_serum.png'
 
-import armiyati from '../../assets/testimoni_sabun/armiyati.jpeg'
 import cacar from '../../assets/testimoni_sabun/cacar.jpeg'
 import gatal from '../../assets/testimoni_sabun/gatal.jpeg'
 import ziva from '../../assets/testimoni_sabun/ziva.jpeg'
@@ -28,7 +27,7 @@ import aktif from '../../assets/manfaat/aktif.jpeg'
 
 import produk from '../../assets/produk.jpeg'
 
-const testimoni_sabun = [kuning, wasir, armiyati, cacar, gatal, ziva];
+const testimoni_sabun = [kuning, wasir, cacar, gatal, ziva];
 const testimoni_serum = [anti_aging, before, menstruasi];
 const manfaatSeomGum = [aktif, anak, viral];
 const manfaatSerum = [salmon, serumImage, ceutical];
